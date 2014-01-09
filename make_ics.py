@@ -8,7 +8,7 @@ from hashlib import md5
 COUNTRIES = {
     'ru': 225,
 }
-CALENDAR_URL = 'http://calendar.yandex.ru/export/holidays.xml?start_date=2012-01-01&end_date=%(year)s-12-31&' +\
+CALENDAR_URL = 'http://calendar.yandex.ru/export/holidays.xml?start_date=2014-01-01&end_date=%(year)s-12-31&' +\
                'country_id=%(country)s&out_mode=overrides'
 
 
