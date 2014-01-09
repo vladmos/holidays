@@ -36,7 +36,7 @@ def make_ics(feed):
         is_holiday = attributes['is-holiday'] == '1'
         if not is_holiday:
             name = 'Рабочий день: ' + name
-        uid = md5(name).hexdigest()
+        uid = md5(name + date).hexdigest()
 
         io.write('BEGIN:VEVENT\n')
         io.write('CATEGORIES:каникулы\n')
